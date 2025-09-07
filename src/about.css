@@ -197,7 +197,7 @@ li{
 @media screen and (min-width: 300px) and (max-width :600px){
     .about{
         width: 100%;
-        padding:50px 20px 0 20px;
+        padding:50px 0 0 20px;
         /* background-color: blue; */
     }
     .about div:first-child span{
