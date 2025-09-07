@@ -17,7 +17,7 @@ export default function Skills(){
             </div>
             <section>
                  <figure>
-                        <h2>Technologies I know</h2>
+                        <h2>Technologies I Work With</h2>
                         <div>
                             <span>HTML5</span>
                             <span>css3 sass</span>
@@ -28,6 +28,9 @@ export default function Skills(){
                             <span>Git/Github</span>
                             <span style={{display:"flex",alignItems:"center",justifyContent:"center"}}>CI/CD BASICS</span>
                             <span>Chrome Dev Tools</span>
+                            <span>Prodction Netlify</span>
+                            <span>Media Queries</span>
+                            <span>REST API</span>
                         </div>
                 </figure>
                 <article>
