@@ -1,0 +1,272 @@
+/* General Styling */
+.navbar {
+    height: 100%;
+    width: 25%;
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+    /* background-color: red; */
+}
+.navhead {
+   
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    /* background-color: blue; */
+}
+.navhead h2,h5{
+    font-weight: 300;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    text-align: center;
+}
+.navhead h5{
+    width: 80%;
+}
+/* Profile Styling */
+.profile {
+    transform: scale(1);
+    height: 100px;
+    width: 100px;
+    background-color: rgb(240, 228, 228);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease; /* Transition for scaling */
+}
+
+.profile img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.profile:hover img {
+    transform: scale(1.2);
+    transition: transform 0.3s ease; /* Smooth scaling on hover */
+}
+
+/* Navigation Items */
+.navmain {
+    padding: 10px;
+    width: 100%;
+}
+
+.navmain ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+.navmain ul li {
+    padding: 10px; /* Increased padding for touch targets */
+    margin: 5px 0; /* Vertical margin for spacing */
+    border-radius: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition for background */
+}
+
+.navmain ul li:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly more visible hover effect */
+}
+
+.navmain ul li a {
+    color: rgba(255, 255, 255, 0.8); /* Improved contrast */
+    text-decoration: none; /* Remove underline */
+}
+
+.navmain ul li a span {
+    font-size: 13.5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Footer Icons */
+.navfooter {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+/* .navfooter a{
+    background-color: red;
+    display: flex;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+    justify-content: start;
+    align-items: start;
+} */
+.navfooter i {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 50%;
+    margin: 0px;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: color 0.3s ease; /* Transition for icon color */
+}
+
+.navfooter i:hover {
+    color: #fff; /* Brighten on hover */
+}
+
+/* #menu {
+    align-self: flex-end;
+    display: none;
+} */
+
+/* Responsive Styling */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .navbar {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+
+    .navhead {
+        display: none;
+    }
+
+    .navmain ul {
+        display: flex;
+    }
+
+    .navfooter {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    
+    #menu {
+        /* display: block; */
+        font-size: 24px;
+        padding: 10px;
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items:end;
+        justify-content: end;
+        gap: 5px;
+        /* background-color: red; */
+    }
+  #menu > span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color:rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+    border-radius: 2px;
+  }
+  #menu span:nth-child(1) {
+    width: 40px;
+  }
+  
+  #menu span:nth-child(2) {
+    width: 30px;
+  }
+  
+  #menu span:nth-child(3) {
+    width: 20px;
+  }
+  /* When #menu has .open class, transform spans into an "X" */
+  #menu.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    width: 30px;
+  }
+  
+  #menu.open span:nth-child(2) {
+    opacity: 0; /* Hide middle line */
+  }
+  
+  #menu.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    width: 30px;
+  }
+  
+    .navbar {
+        position: fixed;
+        width: 100%;
+        padding: 0px;
+        background-color: #242424;
+        margin: 0;
+        box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.02);
+        height: auto;
+    }
+
+    .navhead {
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .navhead h2 {
+        padding: 10px 20px;
+    }
+
+    .navhead h5 {
+        display: none;
+    }
+
+    .profile {
+        display: none;
+    }
+
+  
+
+    .navmain {
+        position: fixed;
+        top: 0;
+        left: -100%; /* Start off-screen */
+        width: 80%;
+        height: 100vh;
+        background-color: #242424;
+        padding: 0;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        transition: left 0.2s ease; /* Smooth slide effect */
+    }
+
+    .navmain ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navmain ul li:hover {
+        background-color: rgba(255, 255, 255, 0.1); /* Slightly more visible hover effect */
+    }
+    .navfooter {
+        display: none;
+    }
+
+    /* Show the menu items when toggled */
+    .show {
+        left: 0; /* Slide in from the left */
+        padding: 40px 0px;
+        /* background-color: red; */
+    }
+    .overflow-hidden{
+        overflow: hidden;
+        /* filter: blur(1px); */
+    }
+    
+    .navmain ul li {
+        padding: 10px; /* Add padding for touch targets */
+        border-radius: 0;
+    }
+    
+}
+
+/* Menu Item Styles */

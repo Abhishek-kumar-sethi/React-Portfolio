@@ -1,0 +1,18 @@
+footer{
+    /* background-color: red; */
+    height: 100px;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+}
+footer p span{
+    color: #00909c;
+}

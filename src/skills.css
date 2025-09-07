@@ -1,0 +1,432 @@
+.skills{
+    height: 100vh;
+    width: 100%;
+    padding:50px;
+}
+.skills >div:first-child{
+    /* background-color: red; */
+    display: flex;
+    align-items:center;
+    justify-content: start;
+    padding: 20px 0px;
+    
+}
+.skills >div:first-child h3{
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #00909c;
+}
+.skills >div:first-child span{
+    height: 1px;
+    width: 300px;
+    /* background-color:rgba(255,255,255,0.2); */
+    background-color: #00909c;
+    margin: 0px 20px;
+}
+.skills h2{
+    font-weight: 400;
+}
+.skills section{
+    display: flex;
+    padding: 20px 0px;
+    width: 100%;
+    /* background-color: blue; */
+}
+.skills section figure{
+    width: 50%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills section figure h2{
+    padding: 10px 0px;
+}
+.skills section figure  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+.skills section figure  div span{
+    height: 120px;
+    width: 120px;
+    margin: 0px 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* filter: grayscale(1); */
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #00909c;
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.01);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.skills section article{
+    width: 50%;
+    /* background-color: red; */
+    padding: 0 50px;
+}
+.skills section article div {
+    padding: 20px 0px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}   
+
+.skills section article div button {
+    /* width: 200px; */
+    border: 2px solid #00909c;
+    outline: none;
+    padding: 15px 20px;
+    background: transparent;
+    font-size: 15px;
+    margin: 20px 10px;
+    font-weight: bolder;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; /* Ensures ::after effect stays within button bounds */
+    border-radius: 5px;
+}
+
+.skills section article div button a {
+    z-index: 5;
+    position: relative;
+    color: #00909c;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+}
+.skills section article div button:hover a{
+    /* z-index: 5;
+    position: relative;
+    color: #00909c;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif; */
+    color: #fff;
+}
+.skills section article div button::after {
+    content: "";
+    position: absolute;
+   background-color: #00909c;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    transition: width 0.5s; /* This will animate width on hover */
+}
+
+.skills section article div button:hover::after {
+    width: 100%; /* Expands ::after to cover the entire button */
+}
+
+.skills section article div button:hover {
+    font-weight: 1000;
+    transition: font-weight 0.3s ease-in-out;
+}
+@media screen and (min-width: 600px) and (max-width: 1024px){
+  .skills{
+    height: auto;
+    width: 100%;
+    padding:50px;
+    
+}
+.skills >div:first-child{
+    /* background-color: red; */
+    display: flex;
+    align-items:center;
+    justify-content: start;
+    padding: 20px 0px;
+    
+}
+.skills >div:first-child h3{
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #00909c;
+}
+.skills >div:first-child span{
+    height: 1px;
+    width: 300px;
+    /* background-color:rgba(255,255,255,0.2); */
+    background-color: #00909c;
+    margin: 0px 20px;
+}
+.skills h2{
+    font-weight: 400;
+}
+.skills section{
+    display: flex;
+    padding: 20px 0px;
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+    /* background-color: blue; */
+}
+.skills section figure{
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills section figure h2{
+    padding: 10px 0px;
+}
+.skills section figure  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    padding: 20px 0;
+    gap: 20px;
+    /* background-color: red; */
+}
+.skills section figure  div span{
+    height: 120px;
+    width: 120px;
+    margin: 0px 20px;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* filter: grayscale(1); */
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #00909c;
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.01);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.skills section article{
+    width: 100%;
+    /* background-color: red; */
+    padding: 20px 0 0 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills section article div {
+    padding: 20px 0 0 0px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}   
+
+.skills section article div button {
+    /* width: 200px; */
+    border: 2px solid #00909c;
+    outline: none;
+    padding: 15px 20px;
+    background: transparent;
+    font-size: 15px;
+    margin: 20px 10px;
+    font-weight: bolder;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; /* Ensures ::after effect stays within button bounds */
+    border-radius: 5px;
+}
+
+.skills section article div button a {
+    z-index: 5;
+    position: relative;
+    color: #00909c;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+}
+.skills section article div button:hover a{
+    /* z-index: 5;
+    position: relative;
+    color: #00909c;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif; */
+    color: #fff;
+}
+.skills section article div button::after {
+    content: "";
+    position: absolute;
+   background-color: #00909c;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    transition: width 0.5s; /* This will animate width on hover */
+}
+
+.skills section article div button:hover::after {
+    width: 100%; /* Expands ::after to cover the entire button */
+}
+
+.skills section article div button:hover {
+    font-weight: 1000;
+    transition: font-weight 0.3s ease-in-out;
+}
+}
+@media screen and (min-width:300px) and (max-width: 600px){
+  .skills{
+    height: auto;
+    width: 100%;
+    padding:20px;
+    
+}
+.skills >div:first-child{
+    /* background-color: red; */
+    display: flex;
+    align-items:center;
+    justify-content: start;
+    padding: 20px 0px;
+    
+}
+.skills >div:first-child h3{
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #00909c;
+}
+.skills >div:first-child span{
+    height: 1px;
+    width: 100px;
+    /* background-color:rgba(255,255,255,0.2); */
+    background-color: #00909c;
+    margin: 0px 20px;
+}
+.skills h2{
+    font-weight: 400;
+}
+.skills section{
+    display: flex;
+    padding: 20px 0px;
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+    /* background-color: blue; */
+}
+.skills section figure{
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills section figure h2{
+    padding: 10px 0px;
+}
+.skills section figure  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    padding: 20px 0;
+    gap: 20px;
+    /* background-color: red; */
+}
+.skills section figure  div span{
+    height: 120px;
+    width: 120px;
+    margin: 0px 20px;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* filter: grayscale(1); */
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #00909c;
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.01);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.skills section article{
+    width: 100%;
+    /* background-color: red; */
+    padding: 20px 0 0 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills section article div {
+    padding: 20px 0 0 0px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    /* background-color: red; */
+    align-items: start;
+    justify-content: start;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    /* background-color: red; */
+}   
+
+.skills section article div button {
+    width:80%;
+    /* width: 200px; */
+    border: 2px solid #00909c;
+    outline: none;
+    padding: 15px 20px;
+    background: transparent;
+    font-size: 15px;
+    margin: 20px 10px;
+    font-weight: bolder;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; /* Ensures ::after effect stays within button bounds */
+    border-radius: 5px;
+}
+
+.skills section article div button a {
+    z-index: 5;
+    position: relative;
+    color: #00909c;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+}
+.skills section article div button:hover a{
+    /* z-index: 5;
+    position: relative;
+    color: #00909c;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif; */
+    color: #fff;
+}
+.skills section article div button::after {
+    content: "";
+    position: absolute;
+   background-color: #00909c;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    transition: width 0.5s; /* This will animate width on hover */
+}
+
+.skills section article div button:hover::after {
+    width: 100%; /* Expands ::after to cover the entire button */
+}
+
+.skills section article div button:hover {
+    font-weight: 1000;
+    transition: font-weight 0.3s ease-in-out;
+}
+}

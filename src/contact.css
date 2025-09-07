@@ -1,0 +1,146 @@
+.contact{
+    height: 100vh;
+    width: 100%;
+    padding: 100px 50px;
+    display: flex;
+    /* flex-direction: column; */
+    background-color:rgb(27,27,30);
+    /* align-items: center;
+    justify-content:start; */
+    /* background-color: yellow; */
+}
+.contact >div:first-child{
+    /* background-color: red; */
+    height: 100%;
+    width: 70%;
+    /* background-color: blue; */
+    display: flex;
+    align-items:start;
+    justify-content:start;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 80px 0px 0px;
+}
+.contact >div:first-child h2{
+    
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+    /* color: #00909c; */
+}
+.contact >div:first-child h3{
+    
+    font-weight: 300;
+    font-size: 30px;
+    /* color: #00909c; */
+}
+/* .contact >div:first-child span{
+    height: 1px;
+    width: 300px;
+    background-color: #00909c;
+    margin: 0px 20px;
+} */
+.contact >div:last-child{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    /* background-color: red; */
+    flex-direction: column;
+}
+.contact >div:last-child > span{
+    width: 100%;
+    /* background-color: blue; */
+    padding: 0px 0;
+    background-color: transparent;
+    font-size: 20px;
+    /* background-color:red; */
+    line-height:40px;
+    margin:20px 0;
+}
+.contact >div:last-child > p,a{
+    width: 100%;
+    /* background-color: blue; */
+    padding: 10px 0;
+    background-color: transparent;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (min-width: 300px) and (max-width :600px){
+    .contact{
+        height: auto;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        /* flex-direction: column; */
+        background-color:rgb(27,27,30);
+        /* align-items: center;
+        justify-content:start; */
+        /* background-color: yellow; */
+    }
+    .contact >div:first-child{
+        /* background-color: red; */
+        height: 100%;
+        width: 100%;
+        /* background-color: blue; */
+        display: flex;
+        align-items:start;
+        justify-content:start;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0px 0px 0px 0px;
+    }
+    .contact >div:first-child h2{
+        
+        font-weight: 300;
+        font-size:30px;
+        line-height: 35px;
+        /* color: #00909c; */
+    }
+    .contact >div:first-child h3{
+        
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 30px;
+        /* color: #00909c; */
+    }
+    
+    .contact >div:last-child{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        /* background-color: red; */
+        flex-direction: column;
+        gap: 0;
+    }
+    .contact >div:last-child > span{
+        width: 100%;
+        background-color: blue;
+        padding: 0px 0;
+        background-color: transparent;
+        font-size: 20px;
+    }
+    .contact >div:last-child > p{
+        width: 100%;
+        /* background-color: blue; */
+        padding: 10px 0;
+        background-color: transparent;
+        font-size: 16px;
+    }
+    
+}
+@media screen and (min-width: 600px) and (max-width: 1024px){
+    .contact{
+        height: auto;
+    }
+}
+/* .contact section figure img{} */
+/* .contact form div input:focus {
+    color: red;
+} */

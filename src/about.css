@@ -1,0 +1,223 @@
+.about{
+    height:auto;
+    width: 100%;
+    /* background-color:rgb(27,27,30); */
+    padding:50px;
+    position: relative;
+    /* overflow: scroll;
+    overflow-x: hidden; */
+}
+.about div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    /* background-color: red; */
+}
+.about div:first-child h3{
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #00909c;
+    /* background-color: red; */
+}
+.about-content article p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: .5px;
+}
+li{
+    font-weight: 300;
+}
+.about-content figure {
+    height: 100%;
+    width: 50%;
+    /* display: flex;
+    align-items: start;
+    justify-content: start; */
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* background-color: red; */
+    padding: 0px 50px;
+    /* padding-top: 0;
+    display: flex; */
+    /* flex-wrap: wrap; */
+}
+.about-content figure div{
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
+    /* display: flex;
+    flex-direction: column; */
+    padding: 0;
+    position: relative; /* Important for the pseudo-element */
+    overflow: hidden;
+    /* background-color: red; */
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+.about-content figure div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%); */
+    background-color: rgb(0, 144, 156,0.7);
+    /* background-color: rgba(0,0,0,0.8); */
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    z-index: 1; /* Ensures the overlay stays above the background image */
+}
+.about-content figure div:hover::before {
+    opacity: 0; /* Show radial overlay on hover */
+}
+.about-content figure div img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    /* margin: 20px 0px; */
+  
+}
+.about-content figure article{
+    padding: 20px 0px;
+    width: 100%;
+}
+.about-content figure article ul{
+    width: 100%;
+}
+.about-content figure article ul li{
+    list-style: decimal;
+    /* background-color: red; */
+    padding: 0;
+}
+.about-content figure article ul li span{
+    color: #00909c;
+}
+.about-content figure p span{
+    color: rgb(0, 144, 156);
+}
+.about-content article p span{
+    color: rgb(0, 144, 156);
+}
+/* .about-content figure img{
+    height: 100px;
+    width: 90px;
+    margin: 0px 10px;
+    padding: 10px;
+    filter: grayscale(1);
+}
+.about-content figure img:hover{
+    filter: grayscale(0);
+    transition: .2s ease;
+} */
+.about-content figure h2 {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+ .about-content article{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+ }
+ .about-content article ul{
+    /* background-color: red; */
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .about-content article ul li{
+    /* list-style:circle; */
+    margin: 5px;
+    /* padding: 0; */
+    padding: 10px;
+    
+ }
+.about >div>span{
+    /* text-align: center; */
+    height: 1px;
+    width: 300px;
+   background-color: #00909c;
+    margin: 0px 20px;
+}
+.about-content{
+    padding: 50px 0px;
+    width: 100%;
+    display: flex;
+    /* display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px; */
+}
+.about-content p{
+    font-weight: 500;
+    opacity: .7;
+    font-style: normal;
+    width: 100%;
+}
+.int{
+    /* padding: 5px; */
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;    
+    width: 250px;
+}
+.int input{
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+}
+@media screen and (min-width: 600px) and (max-width: 1024px){
+    .about{
+        width: 100%;
+        height: auto;
+    }
+    .about-content{
+        width: 100%;
+        gap: 20px;
+    }
+    .about-content article{
+        width: 100%;
+    }
+    .about-content figure{
+        width: 100%;
+        padding: 0;
+    }
+    .about .about-content figure img{
+        margin: 10px 0px;
+    }
+}
+@media screen and (min-width: 300px) and (max-width :600px){
+    .about{
+        width: 100%;
+        padding:50px 20px 0 20px;
+        /* background-color: blue; */
+    }
+    .about div:first-child span{
+        width: 100px;
+    }
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .about-content article{
+        width: 100%;
+        /* background-color: red; */
+        padding-bottom: 0;
+    }
+    .about-content figure{
+        width: 100%;
+        padding: 0;
+    }
+    .about .about-content figure img{
+        margin: 10px 0px;
+    }
+}

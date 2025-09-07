@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Message Example</title>
+    <style>
+        .hidden {
+    display: none;
+}
+
+#hover-message {
+    position: absolute;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+    </style>
+</head>
+<body>
+    <div class="hover-container">
+        <button id="hover-target">Hover Over Me</button>
+        <div id="hover-message" class="hidden">This is the hover message!</div>
+    </div>
+
+    <script>
+
+        // Wait for the DOM to fully load
+document.addEventListener('DOMContentLoaded', function() {
+    const hoverTarget = document.getElementById('hover-target');
+    const hoverMessage = document.getElementById('hover-message');
+
+    // Show the hover message when mouse enters the target element
+    hoverTarget.addEventListener('mouseenter', function() {
+        // Position the message element relative to the target element
+        const targetRect = hoverTarget.getBoundingClientRect();
+        // hoverMessage.style.top = `${targetRect.bottom + 10}px`;
+        // hoverMessage.style.left = `${targetRect.left}px`;
+
+        // Display the message
+        hoverMessage.classList.remove('hidden');
+    });
+
+    // Hide the hover message when mouse leaves the target element
+    hoverTarget.addEventListener('mouseleave', function() {
+        // Hide the message
+        hoverMessage.classList.add('hidden');
+    });
+});
+    </script>
+</body>
+</html>
